@@ -93,7 +93,7 @@ module.exports = function() {
       });
     },
     
-    isSharedApi: function _isSharedApi(){
+    _isSharedApi: function _isSharedApi(){
       return this.serverless.service.provider.apiGateway ? !!this.serverless.service.provider.apiGateway.restApiId : false;
     },
 
